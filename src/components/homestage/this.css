@@ -63,6 +63,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.85;
 }
 
 .midbody .info
@@ -79,15 +80,6 @@
     color: wheat;
 }
 
-/* #meditate{
-    color: royalblue;
-}
-#ideate{
-    color: goldenrod;
-}
-#iterate{
-    color: wheat;
-} */
 
 /****icons****/
 .zenKnob {
@@ -101,6 +93,7 @@
 }
 .booksKnob {
     background-color: white;
+
     background-image: url('../../../public/images/home/book.gif');
     background-size: 85%;
     background-position: center;

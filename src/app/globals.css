@@ -18,6 +18,7 @@
 body {
 	font-family: nunito, Helvetica, sans-serif;
 	background-color: black;
+
 	color: white;
 	overflow-x: hidden;
 }
@@ -39,7 +40,7 @@ body {
 	position: relative;
 	margin: auto;
 	width: 98vw;
-	height: 96vh;
+	height: 93.5vh;
 	/* border: 1px solid red; */
 }
 .title h1,
@@ -80,7 +81,6 @@ body {
 	top: 0;
 	box-sizing: border-box;
 	padding: 5px;
-	/* border: 1px inset black; */
 	width: 99%;
 	top: 2%;
 	height: 84%;
@@ -88,6 +88,7 @@ body {
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 	border-radius: 5px;
+	/* border: 1px inset black; */
 }
 .notActive
 {
@@ -95,14 +96,12 @@ body {
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity 0.5s ease-out;
-	/* display: none; */
 }
 .isActive
 {
 	opacity: 1;
 	pointer-events: all;
 	transition: opacity 0.3s ease-in;
-	/* display: block; */
 }
 .isKnobsBar
 {
@@ -110,23 +109,26 @@ body {
 	height: 50px;
 	position: absolute;
 	bottom: 15px;
-	/* border: 1px solid green; */
 	display: flex;
 	align-items: center;
 	justify-content: end;
 	box-sizing: border-box;
 	padding: 5px;
 	gap: 5px;
+	/* border: 1px solid green; */
 }
 .isKnob
 {
-	padding: 10px;
+	padding: 5px;
 	background-color: transparent;
 	border-color: silver;
 	color: inherit;
 	border-radius: 5px;
 	cursor: pointer;
 	transition: transform 0.5s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .isKnob:hover
 {
@@ -138,11 +140,16 @@ body {
 	transform: scale(0.9);
 	transition: transform 0.4s ease;
 }
+.underbar{
+	width: 50px;
+	height: 50px;
+}
 footer
 {
 	width: 100%;
 	height: 25px;
-	position: absolute;
+	/* position: absolute; */
+	position: fixed;
 	bottom: 0;
 
 	box-shadow: -1px -1px 4px rgba(103, 103, 103, 0.6);
