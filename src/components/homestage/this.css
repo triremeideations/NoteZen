@@ -90,20 +90,15 @@
 } */
 
 /****icons****/
-.zenKnob
-{
+.zenKnob {
     background-image: url('../../../../public/images/home/lotus.gif');
 }
-.quickKnob
-{
+.quickKnob {
     background-image: url('../../../../public/images/home/notes.gif');
 }
-.listKnob
-{
+.listKnob {
     background-image: url('../../../../public/images/home/checklist.gif');
 }
-.booksKnob
-{
+.booksKnob {
     background-image: url('../../../../public/images/home/book.gif');
 }
-
