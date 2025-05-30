@@ -132,6 +132,8 @@ You may not copy or redistribute this project in full or in part without consent
 ### 🙏 Attribution
 
 Icons, fonts, and media (if any) are used under their respective licenses.
+(a href="https://www.flaticon.com/free-icons/calm" title="calm icons")[Calm icons] created by Freepik - Flaticon</a>
+
 Built with ❤️ and discipline — by someone who doesn't even like React 😅
 
 <br>
