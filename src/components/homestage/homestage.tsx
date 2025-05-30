@@ -74,10 +74,10 @@ export function Homestage()
             
             <div className="options">
                 <div className="optknobs">
-                    <div className="isKnob zenKnob" onClick={showZen}></div>
-                    <div className="isKnob quickKnob" onClick={showQuicknote}></div>
-                    <div className="isKnob listKnob" onClick={showChecklist}></div>
-                    <div className="isKnob booksKnob" onClick={showNotebook}></div>
+                    <div className="isKnob zenKnob" onClick={showZen}> </div>
+                    <div className="isKnob quickKnob" onClick={showQuicknote}> </div>
+                    <div className="isKnob listKnob" onClick={showChecklist}> </div>
+                    <div className="isKnob booksKnob" onClick={showNotebook}> </div>
                 </div>
             </div>
             <div className="info">
