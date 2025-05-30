@@ -39,7 +39,7 @@ If you’d like to:
 - Turn it into a template, starter, or product
 
 📩 **Reach out first.**  
-Contact: [https://www.linkedin.com/in/stanley-aduaka]
+[Contact](https://www.linkedin.com/in/stanley-aduaka)
 Let’s talk and work something out.
 
 ---
