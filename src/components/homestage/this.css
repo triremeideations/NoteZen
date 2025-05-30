@@ -1,0 +1,85 @@
+.midbody
+{
+    position: absolute;
+    top: 10rem;
+    width: 70%;
+    right: 0;
+
+    height: 65%;
+    /* border: 1px solid gold; */
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+@media only screen and (max-height: 767.98px)
+{
+    .midbody
+    {
+        top: 8.8rem;
+        max-height: 380px;
+    }
+}
+@media only screen and (max-height: 500px)
+{
+    .midbody
+    {
+        max-height: 200px;
+        flex-direction: row-reverse;
+    }
+}
+.midbody .info,
+.midbody .options
+{
+    position: relative;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+}
+.optknobs
+{
+    position: relative;
+    margin: auto;
+    width: 175px;
+    height: 175px;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    justify-items: center;
+    align-items: center;
+    /* border: 1px solid gold; */
+}
+.optknobs .isKnob
+{
+    width: 70%;
+    height: 70%;
+    border: 1px solid gold;
+    border-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.midbody .info
+{
+    font-family: "Suisse Intl", "Lucida Sans", Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    letter-spacing: -0.03em;
+    line-height: 0.95;
+
+    text-wrap: pretty;
+    text-align: right;
+    word-spacing: 3px;
+    color: wheat;
+}
+
+/* #meditate{
+    color: royalblue;
+}
+#ideate{
+    color: goldenrod;
+}
+#iterate{
+    color: wheat;
+} */
