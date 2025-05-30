@@ -13,12 +13,12 @@ Combining meditation, note-taking, checklists, and media journals: all in a seam
 **Ìwàrí NOTE*Zen*** is a minimalist yet powerful React (Next.js) portfolio app that unifies four commonly used tools into a single intuitive interface:
 
 - 🧘‍♂️ **Meditation**: A simple timer with optional breathing guide to help you pause and refocus.
-- ✅ **To-Do (Checklist)**: Manage your daily tasks in a clean and distraction-free format.
+- ✅ **To-Do (Checklist)**: Manage your daily tasks in a clean and structured format.
 - 📝 **Notes**: Write down quick thoughts, reminders, or ideas.
 - 📓 **Notebooks**: Organize multiple or related notes, with support for images and audio.
 
 <br>
-Built with smooth transitions, contextual state management, and an aesthetic layout that aims for enhanced productivity and distracion-free use.
+Built with smooth transitions, contextual state management, and an aesthetic layout that aims for enhanced productivity and distraction-free use.
 <br><br>
 
 ---
@@ -111,12 +111,12 @@ npm start
 
 <br>
 
-### 🧭 Roadmap
+## 🧭 Roadmap
 
-#### Possible extra features (time and willingness allowing it).
+#### Planned Features (time and willingness allowing):
+- 📝 Export notes and notebooks as PDF or Markdown
+- 🔐 Optional login for syncing across devices
 
-Export notes and notebooks as PDF or markdown
-Optional login for syncing across devices
 <br><br>
 
 ## 🔐 License & Usage
