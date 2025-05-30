@@ -1,7 +1,9 @@
 # Ìwàrí NOTEZen
 
+
 **A focused productivity and mindfulness suite built with Next.js and Typescript.**  
-Combining meditation, note-taking, checklists, and media journals — all in a seamless single-page app.
+Combining meditation, note-taking, checklists, and media journals: all in a seamless single-page app.
+
 
 ---
 
@@ -117,4 +119,7 @@ Built with ❤️ and discipline — by someone who doesn't even like React 😅
 ### 🤝 Let's Connect
 
 If you're interested in using this project, collaborating, or just saying hello:
+
+GitHub Issues
+
 [LinkedIn](https://www.linkedin.com/in/stanley-aduaka)
