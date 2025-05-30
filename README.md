@@ -1,15 +1,15 @@
-# Ìwàrí NOTEZen
+# Ìwàrí NOTE_Zen_
 
 
 **A focused productivity and mindfulness suite built with Next.js and Typescript.**  
 Combining meditation, note-taking, checklists, and media journals: all in a seamless single-page app.
 
-
 ---
+␣␣  
 
 ## ✨ Overview
 
-**Ìwàrí NOTEZen** is a minimalist yet powerful React (Next.js) portfolio app that unifies four commonly used tools into a single intuitive interface:
+**Ìwàrí NOTE*Zen*** is a minimalist yet powerful React (Next.js) portfolio app that unifies four commonly used tools into a single intuitive interface:
 
 - 🧘‍♂️ **Meditation**: A simple timer with optional breathing guide to help you pause and refocus.
 - ✅ **To-Do (Checklist)**: Manage your daily tasks in a clean and distraction-free format.
@@ -17,7 +17,7 @@ Combining meditation, note-taking, checklists, and media journals: all in a seam
 - 📓 **Notebooks**: Organize multiple or related notes, with support for images and audio.
 
 Built with smooth transitions, contextual state management, and an aesthetic layout that aims for enhanced productivity and distracion-free use.
-
+␣␣
 ---
 
 ## 🚀 Features
@@ -30,6 +30,7 @@ Built with smooth transitions, contextual state management, and an aesthetic lay
 - 💡 Built with [Next.js](https://nextjs.org/)
 
 ---
+␣␣
 
 ## 📸 Screenshots
 
@@ -39,16 +40,18 @@ Built with smooth transitions, contextual state management, and an aesthetic lay
 > )
 
 ---
+␣␣
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: React (Next.js)
 - **Language**: TypeScript
 - **State Management**: React Context API + Hooks
-- **Styling**: Vanilla CSS 3. I can't stand Tailwind. Sorry, not sorry.
+- **Styling**: Vanilla CSS 3. ~~I can't stand Tailwind.~~*~~Sorry, not sorry.~~*
 - **Deployment**: Vercel
 
 ---
+␣␣
 
 ## 🧑‍💻 Getting Started
 
@@ -61,8 +64,8 @@ Built with smooth transitions, contextual state management, and an aesthetic lay
 
 ```bash
 # Clone the repository
-git clone https://github.com/triremeideations/NoteZen.git
-cd NoteZen
+git clone https://github.com/triremeideations/NOTEZen.git
+cd NOTEZen
 
 # Install dependencies
 npm install
@@ -74,6 +77,7 @@ npm run dev
 Then visit http://localhost:3000 to use the app locally.
 
 ### 📦 Build for Production
+␣␣
 
 ```bash
 npm run build
@@ -81,6 +85,7 @@ npm start
 ```
 
 ### 📁 Project Structure
+␣␣
 
 ```bash
 /
@@ -103,6 +108,7 @@ npm start
 
 Export notes and notebooks as PDF or markdown
 Optional login for syncing across devices
+␣␣
 
 ## 🔐 License & Usage
 
@@ -116,10 +122,10 @@ You may not copy or redistribute this project in full or in part without consent
 Icons, fonts, and media (if any) are used under their respective licenses.
 Built with ❤️ and discipline — by someone who doesn't even like React 😅
 
+␣␣
+
 ### 🤝 Let's Connect
 
 If you're interested in using this project, collaborating, or just saying hello:
-
-GitHub Issues
 
 [LinkedIn](https://www.linkedin.com/in/stanley-aduaka)
