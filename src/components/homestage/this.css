@@ -100,7 +100,8 @@
     background-image: url('../../../public/images/home/checklist.gif');
 }
 .booksKnob {
+    background-color: white;
     background-image: url('../../../public/images/home/book.gif');
-    background-size: 80%;
+    background-size: 85%;
     background-position: center;
 }
