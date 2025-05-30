@@ -4,7 +4,7 @@ import { paneActiveContext } from "@/contexts/PaneContext";
 
 export function KnobsBar(){
 
-    function currentPaneContext(){
+    function useCurrentPaneContext(){
         const ctx = useContext(paneActiveContext);
         if(!ctx){
             throw new Error('must use PaneContext within PaneActiveProvider')
@@ -15,7 +15,7 @@ export function KnobsBar(){
         isKnobsbarShowing,
         setIsHomeShowing, setIsZenShowing, setIsChecklistShowing,
         setIsNotebookShowing, setIsQuicknoteShowing, setIsKnobsbarShowing
-    } = currentPaneContext();
+    } = useCurrentPaneContext();
 
     function hideAll():void
     {

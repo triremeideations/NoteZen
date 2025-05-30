@@ -3,7 +3,7 @@ import { paneActiveContext } from "@/contexts/PaneContext";
 
 
 export function NotebooksPane() {
-	function currentPaneContext(){
+	function useCurrentPaneContext(){
 		const ctx = useContext(paneActiveContext);
 		if(!ctx){
 			throw new Error('must use PaneContext within PaneActiveProvider')
@@ -11,7 +11,7 @@ export function NotebooksPane() {
 		return ctx;
 	}
 
-	const { isNotebookShowing } = currentPaneContext();
+	const { isNotebookShowing } = useCurrentPaneContext();
 	
 	return (
 		<div

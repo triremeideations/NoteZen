@@ -4,7 +4,7 @@ import { paneActiveContext } from "@/contexts/PaneContext";
 
 export function ChecklistPane() 
 {
-	function currentPaneContext(){
+	function useCurrentPaneContext(){
 		const ctx = useContext(paneActiveContext);
 		if(!ctx){
 			throw new Error('must use PaneContext within PaneActiveProvider')
@@ -12,7 +12,7 @@ export function ChecklistPane()
 		return ctx;
 	}
 	
-	const { isChecklistShowing } = currentPaneContext();
+	const { isChecklistShowing } = useCurrentPaneContext();
 	
 	return (
 		<div 

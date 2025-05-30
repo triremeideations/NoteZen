@@ -3,14 +3,14 @@ import { paneActiveContext } from "@/contexts/PaneContext";
 
 
 export function QuicknotesPane() {
-	function currentPaneContext(){
+	function useCurrentPaneContext(){
 		const ctx = useContext(paneActiveContext);
 		if(!ctx){
 			throw new Error('must use PaneContext within PaneActiveProvider')
 		}
 		return ctx;
 	}
-	const { isQuicknoteShowing } = currentPaneContext();
+	const { isQuicknoteShowing } = useCurrentPaneContext();
 	
 		return (
 		<div 

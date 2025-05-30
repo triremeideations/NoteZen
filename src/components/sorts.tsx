@@ -1,7 +1,7 @@
 // import { useContext } from "react";
 // import { paneActiveContext } from "@/contexts/PaneContext";
 
-// function currentPaneContext(){
+// function useCurrentPaneContext(){
 //     const ctx = useContext(paneActiveContext);
 //     if(!ctx){
 //         throw new Error('must use PaneContext within PaneActiveProvider')
@@ -16,7 +16,7 @@
 //     isNotebookShowing, setIsNotebookShowing,
 //     isQuicknoteShowing, setIsQuicknoteShowing,
 //     isKnobsbarShowing, setIsKnobsbarShowing
-// } = currentPaneContext();
+// } = useCurrentPaneContext();
 
 
 // export class PaneStates {

@@ -5,7 +5,7 @@ import { paneActiveContext } from "@/contexts/PaneContext";
 
 export function Homestage()
 {
-    function currentPaneContext(){
+    function useCurrentPaneContext(){
         const ctx = useContext(paneActiveContext);
         if(!ctx){
             throw new Error('must use PaneContext within PaneActiveProvider')
@@ -17,7 +17,7 @@ export function Homestage()
         isHomeShowing, setIsHomeShowing,
         setIsZenShowing, setIsChecklistShowing, setIsNotebookShowing,
         setIsQuicknoteShowing, setIsKnobsbarShowing
-    } = currentPaneContext();
+    } = useCurrentPaneContext();
 
 // NOTE to SELF
 // The above context setup here (and in subsequent components) as a currentPageContext function

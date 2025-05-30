@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { paneActiveContext } from "@/contexts/PaneContext";
 
 export function ZenPane() {
-	function currentPaneContext(){
+	function useCurrentPaneContext(){
 		const ctx = useContext(paneActiveContext);
 		if(!ctx){
 			throw new Error('must use PaneContext within PaneActiveProvider')
@@ -10,7 +10,7 @@ export function ZenPane() {
 		return ctx;
 	}
 	
-	const { isZenShowing } = currentPaneContext();
+	const { isZenShowing } = useCurrentPaneContext();
 
 	return (
 		<div className={`isPane isZentask ${!isZenShowing ? "notActive" : "isActive"}`}>
