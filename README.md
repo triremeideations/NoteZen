@@ -5,7 +5,7 @@
 Combining meditation, note-taking, checklists, and media journals: all in a seamless single-page app.
 
 ---
-<br><br>  
+<br>
 
 ## ✨ Overview
 
@@ -16,6 +16,7 @@ Combining meditation, note-taking, checklists, and media journals: all in a seam
 - 📝 **Notes**: Write down quick thoughts, reminders, or ideas.
 - 📓 **Notebooks**: Organize multiple or related notes, with support for images and audio.
 
+<br>
 Built with smooth transitions, contextual state management, and an aesthetic layout that aims for enhanced productivity and distracion-free use.
 <br><br>
 ---
@@ -76,16 +77,17 @@ npm run dev
 
 Then visit http://localhost:3000 to use the app locally.
 
-### 📦 Build for Production
 <br><br>
+
+### 📦 Build for Production
 
 ```bash
 npm run build
 npm start
 ```
 
-### 📁 Project Structure
 <br><br>
+### 📁 Project Structure
 
 ```bash
 /
