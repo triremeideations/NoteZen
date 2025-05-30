@@ -5,6 +5,7 @@
 Combining meditation, note-taking, checklists, and media journals: all in a seamless single-page app.
 
 ---
+
 <br>
 
 ## ✨ Overview
@@ -19,6 +20,7 @@ Combining meditation, note-taking, checklists, and media journals: all in a seam
 <br>
 Built with smooth transitions, contextual state management, and an aesthetic layout that aims for enhanced productivity and distracion-free use.
 <br><br>
+
 ---
 
 ## 🚀 Features
@@ -31,7 +33,8 @@ Built with smooth transitions, contextual state management, and an aesthetic lay
 - 💡 Built with [Next.js](https://nextjs.org/)
 
 ---
-<br><br>
+
+<br>
 
 ## 📸 Screenshots
 
@@ -41,7 +44,8 @@ Built with smooth transitions, contextual state management, and an aesthetic lay
 > )
 
 ---
-<br><br>
+
+<br>
 
 ## 🛠️ Tech Stack
 
@@ -52,6 +56,7 @@ Built with smooth transitions, contextual state management, and an aesthetic lay
 - **Deployment**: Vercel
 
 ---
+
 <br><br>
 
 ## 🧑‍💻 Getting Started
@@ -77,7 +82,7 @@ npm run dev
 
 Then visit http://localhost:3000 to use the app locally.
 
-<br><br>
+<br>
 
 ### 📦 Build for Production
 
@@ -86,7 +91,7 @@ npm run build
 npm start
 ```
 
-<br><br>
+<br>
 ### 📁 Project Structure
 
 ```bash
@@ -103,6 +108,8 @@ npm start
 ├── contexts/       # App-wide context provider
 └── utils/          # Utility functions
 ```
+
+<br>
 
 ### 🧭 Roadmap
 
@@ -124,7 +131,7 @@ You may not copy or redistribute this project in full or in part without consent
 Icons, fonts, and media (if any) are used under their respective licenses.
 Built with ❤️ and discipline — by someone who doesn't even like React 😅
 
-<br><br>
+<br>
 
 ### 🤝 Let's Connect
 
