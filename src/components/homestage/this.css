@@ -91,14 +91,14 @@
 
 /****icons****/
 .zenKnob {
-    background-image: url('../../../../public/images/home/lotus.gif');
+    background-image: url('../../../public/images/home/lotus.gif');
 }
 .quickKnob {
-    background-image: url('../../../../public/images/home/notes.gif');
+    background-image: url('../../../public/images/home/notes.gif');
 }
 .listKnob {
-    background-image: url('../../../../public/images/home/checklist.gif');
+    background-image: url('../../../public/images/home/checklist.gif');
 }
 .booksKnob {
-    background-image: url('../../../../public/images/home/book.gif');
+    background-image: url('../../../public/images/home/book.gif');
 }
