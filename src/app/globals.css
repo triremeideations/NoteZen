@@ -31,16 +31,16 @@ body {
 	height: var(--fleur_side);
 	position: fixed;
 	z-index: -1;
-	/* border: 1px solid green; */
 	top: calc(50vh - calc(var(--fleur_side)/2));
 	left: calc(-1 * var(--fleur_side)/2);
+	/* border: 1px solid green; */
 }
 .mainpage
 {
 	position: relative;
 	margin: auto;
 	width: 98vw;
-	height: 93.5vh;
+	height: 90vh;
 	/* border: 1px solid red; */
 }
 .title h1,
