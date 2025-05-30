@@ -133,7 +133,7 @@ You may not copy or redistribute this project in full or in part without consent
 
 Icons, fonts, and media are used under their respective licenses.
 <br>
-[Calm icons](https://www.flaticon.com/free-icons/calm")>Calm icons created by Freepik - Flaticon</a>) created by Freepik - Flaticon
+[Calm icons](https://www.flaticon.com/free-icons/meditation)> created by Freepik - Flaticon
 
 Built with ❤️ and discipline — by someone who doesn't even like React 😅
 
