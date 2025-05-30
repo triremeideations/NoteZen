@@ -1,4 +1,4 @@
-# Ìwàrí NOTEZen — Personal Use License
+# Ìwàrí NOTE*Zen* — Personal Use License
 
 This project is provided under a **Restricted Personal Use License**.
 
@@ -44,4 +44,4 @@ Let’s talk and work something out.
 
 ---
 
-© [2025] [Trireme Ideations Space]. All rights reserved.
+© 2025 Trireme Ideations Space. All rights reserved.
