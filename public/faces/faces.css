@@ -1,0 +1,36 @@
+@font-face {
+    font-family: berranger;
+    src: url('/faces/berranger_hand.woff');
+}
+@font-face {
+    font-family: nunito;
+    src: url('/faces/nunito-regular.woff');
+}
+@font-face {
+    font-family: source;
+    src: url('/faces/source_s_pro_R.woff');
+}
+@font-face {
+    font-family: adpro;
+    src: url('/faces/adpro-lt.woff');
+}
+@font-face {
+    font-family: underwood;
+    src: url('/faces/underwood.woff');
+}
+@font-face {
+    font-family: cicle_fina;
+    src: url('/faces/cicle_fina.woff');
+}
+@font-face {
+    font-family: Suisse Intl;
+    src: url('/faces/SuisseIntl-Regular.woff');
+}
+@font-face {
+    font-family: Suisse Intl-Light;
+    src: url('/faces/SuisseIntl-Light.woff');
+}
+@font-face {
+    font-family: Suisse Intl-Mono;
+    src: url('/faces/SuisseIntl-Mono.woff');
+}
