@@ -84,8 +84,8 @@ export function Homestage()
                 <p>
                     <br/>
                     <em>NOTE Zen </em> 
-                    helps you <br/>document and organise 
-                    <br/>your thoughts.
+                    helps you document <br/>
+                    and organise your thoughts.
                     <br/><br/>
                 </p>
                 <hr/>

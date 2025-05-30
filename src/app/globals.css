@@ -62,17 +62,22 @@ body {
 	text-align: right;
 	margin-bottom: 0;
 	line-height: 1.25;
+	letter-spacing: -5px;
+	font-weight: normal;
 }
 .title h2
 {
 	font-size: 1.7rem;
-	color: gold;
+	color: blue;
 }
 .title h2 span
 {
-	color: blue;
+	color: goldenrod;
 	font-style: italic;
-	font-size: 2.4rem;
+	font-size: 2.5rem;
+	position: relative;
+	top: 5px;
+	left: -15px;
 }
 
 .isPane
