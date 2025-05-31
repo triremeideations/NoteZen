@@ -28,7 +28,7 @@ export default function Home() {
 
   try {
     if ('connection' in navigator) {
-      const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+      const conn = navigator.connection
       if (conn.downlink < 1.5 || conn.effectiveType.includes('2g') || conn.saveData) {
         slowAlert();
         return;
