@@ -42,6 +42,7 @@ export default function Home() {
       slowAlert();
     }
   } catch (e) {
+    console.log(e);
     slowAlert();
   }
 })();
