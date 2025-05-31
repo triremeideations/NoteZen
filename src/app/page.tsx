@@ -41,7 +41,7 @@ export default function Home() {
   try {
     if ('connection' in navigator) {
       const conn = navigator.connection as NetworkInformation;
-      if (conn.downlink < 1.5 || conn.effectiveType.includes('2g') || conn.saveData) {
+      if (conn.downlink > 1.5 || conn.effectiveType.includes('2g') || conn.saveData) {
         slowAlert();
         return;
       }
