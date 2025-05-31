@@ -4,6 +4,17 @@ import { useEffect } from "react";
 import { MainPage } from "@/components/main";
 import { PaneActiveProvider } from "@/contexts/PaneContext";
 
+interface NetworkInformation extends EventTarget {
+  downlink: number;
+  effectiveType: 'slow-2g' | '2g' | '3g' | '4g';
+  rtt: number;
+  saveData: boolean;
+  type?: string;
+}
+
+interface Navigator {
+  connection?: NetworkInformation;
+}
 
 export default function Home() {
 
@@ -28,7 +39,7 @@ export default function Home() {
 
   try {
     if ('connection' in navigator) {
-      const conn = navigator.connection
+      const conn = navigator.connection as NetworkInformation;
       if (conn.downlink < 1.5 || conn.effectiveType.includes('2g') || conn.saveData) {
         slowAlert();
         return;
