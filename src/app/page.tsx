@@ -11,10 +11,11 @@ interface NetworkInformation extends EventTarget {
   saveData: boolean;
   type?: string;
 }
-
+/*
 interface Navigator {
   connection?: NetworkInformation;
 }
+*/
 
 export default function Home() {
 
