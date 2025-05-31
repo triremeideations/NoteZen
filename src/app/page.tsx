@@ -1,5 +1,5 @@
 "use client"
-import {useEffect} from react
+import { useEffect } from "react";
 
 import { MainPage } from "@/components/main";
 import { PaneActiveProvider } from "@/contexts/PaneContext";
@@ -36,7 +36,7 @@ export default function Home() {
     }
 
     const start = performance.now();
-    await fetch('../../../public/images/home/notes.png', { cache: 'no-store' });
+    await fetch('$/images/home/notes.png', { cache: 'no-store' });
     const duration = performance.now() - start;
     if (duration > 3000) {
       slowAlert();
