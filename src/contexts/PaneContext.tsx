@@ -22,6 +22,13 @@ export const PaneActiveProvider=(
     const [isQuicknoteShowing, setIsQuicknoteShowing] = useState<boolean>(false);
     const [isKnobsbarShowing, setIsKnobsbarShowing] = useState<boolean>(false);
 
+    const [isPlaylistAShowing, setIsPlaylistAShowing] = useState<boolean>(false);
+    const [isPlaylistBShowing, setIsPlaylistBShowing] = useState<boolean>(false);
+    const [isPlaylistCShowing, setIsPlaylistCShowing] = useState<boolean>(false);
+    const [isPlaylistDShowing, setIsPlaylistDShowing] = useState<boolean>(false);
+
+    const [isMoodplayerShowing, setIsMoodplayerShowing] = useState<boolean>(false);
+
     return(
         <paneActiveContext.Provider
             value={{
@@ -31,6 +38,13 @@ export const PaneActiveProvider=(
                 isNotebookShowing, setIsNotebookShowing,
                 isQuicknoteShowing, setIsQuicknoteShowing,
                 isKnobsbarShowing, setIsKnobsbarShowing,
+
+                isPlaylistAShowing, setIsPlaylistAShowing,
+                isPlaylistBShowing, setIsPlaylistBShowing,
+                isPlaylistCShowing, setIsPlaylistCShowing,
+                isPlaylistDShowing, setIsPlaylistDShowing,
+
+                isMoodplayerShowing, setIsMoodplayerShowing,
             }}
         >
             {children}

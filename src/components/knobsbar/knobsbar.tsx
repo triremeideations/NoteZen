@@ -14,7 +14,10 @@ export function KnobsBar(){
     const {
         isKnobsbarShowing,
         setIsHomeShowing, setIsZenShowing, setIsChecklistShowing,
-        setIsNotebookShowing, setIsQuicknoteShowing, setIsKnobsbarShowing
+        setIsNotebookShowing, setIsQuicknoteShowing, setIsKnobsbarShowing,
+
+        setIsPlaylistAShowing,setIsPlaylistBShowing,
+        setIsPlaylistCShowing, setIsPlaylistDShowing,
     } = useCurrentPaneContext();
 
     function hideAll():void
@@ -25,7 +28,14 @@ export function KnobsBar(){
         setIsChecklistShowing(false);
         setIsNotebookShowing(false);
         setIsZenShowing(false);
+        hideAllPlaylists();
     }
+    function hideAllPlaylists(): void{
+		setIsPlaylistAShowing(false);
+		setIsPlaylistBShowing(false);
+		setIsPlaylistCShowing(false);
+		setIsPlaylistDShowing(false);
+	}
     
     function showBottomKnobs():void
     {

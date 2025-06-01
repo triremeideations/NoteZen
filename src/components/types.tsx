@@ -29,4 +29,21 @@ export interface paneActiveContextProps{
     isKnobsbarShowing: boolean;
     setIsKnobsbarShowing: 
         React.Dispatch<React.SetStateAction<boolean>>,
+
+    isPlaylistAShowing: boolean;
+    setIsPlaylistAShowing: 
+        React.Dispatch<React.SetStateAction<boolean>>,
+    isPlaylistBShowing: boolean;
+    setIsPlaylistBShowing: 
+        React.Dispatch<React.SetStateAction<boolean>>,
+    isPlaylistCShowing: boolean;
+    setIsPlaylistCShowing: 
+        React.Dispatch<React.SetStateAction<boolean>>,
+    isPlaylistDShowing: boolean;
+    setIsPlaylistDShowing: 
+        React.Dispatch<React.SetStateAction<boolean>>,
+
+    isMoodplayerShowing: boolean;
+    setIsMoodplayerShowing: 
+        React.Dispatch<React.SetStateAction<boolean>>,
 }

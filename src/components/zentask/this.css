@@ -1,0 +1,134 @@
+.isZentask{
+    background: linear-gradient(
+        155deg,
+        #23232344,
+        #dcff9a44
+    );
+}
+.mood-ring{
+    font-family: Suisse Intl-Light;
+    width: 99%;
+    margin: auto;
+    font-size: 3.2rem;
+    word-spacing: 2px;
+    letter-spacing: -2px;
+    line-height: 0.9;
+    height: 20%;
+    /* border: 1px solid red; */
+}
+
+
+.mood-choice{
+    width: 95%;
+    margin: auto;
+    height: 55%;
+    
+    display: grid;
+    grid-template-columns: 0.45fr 0.55fr;
+    gap: 15px;
+    margin-top: 10px;
+    /* border: 1px solid white; */
+    /* border-bottom: 1px solid white; */
+}
+/* .mood-cap{
+    border: 1px solid red;
+} */
+
+/* other isMCKnob styles in global.css */
+.isMCKnob{
+    border: 1px solid #dcff9a;
+    border-radius: 20px;
+    height: 50px;
+    max-width: 200px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 95%;
+    letter-spacing: -1.5px;
+    word-spacing: 1px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.isMCKnob small{
+    position: absolute;
+    bottom: 7px;
+    font-size: 65%;
+    letter-spacing: -1px;
+    color: #dcff9a;
+}
+.isMCKnob:hover small,
+.isMCKnob:hover{
+    color: #232323;
+}
+.isMCKnob:hover{
+    background-color: #dcff9a;
+    font-weight: bold;
+}
+
+.mood-player{
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    /* border: 1px solid royalblue; */
+    background-image: url('../../../public/images/hinduist-yoga-position.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mood-player::-webkit-scrollbar
+{
+    background-color: rebeccapurple;
+    width: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mood-player::-webkit-scrollbar-thumb
+{
+    background-color: greenyellow;
+    border-radius: 5px;
+    cursor: grab;
+}
+.mood-player:active::-webkit-scrollbar-thumb
+{
+    cursor: grabbing;
+}
+
+.isPlaylist{
+    background-color: #23232369;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid silver;
+    position: absolute;
+    top: 50%;
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid yellow; */
+}
+
+/***************************************/
+/********mobile in landscape view*******/
+
+@media only screen and (max-width: 1023px) and (max-height: 540px)
+{
+    .mood-ring{
+        font-size: 2.2rem;
+    }
+    .mood-choice{
+        height: 50%;
+    }
+    .isMCKnob{
+        height: 35px;
+    }
+    .isMCKnob small{
+        height: 35px;
+        display: none;
+    }
+    .isPlaylist{
+        top: 35%;
+    }
+}
