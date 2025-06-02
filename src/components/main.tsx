@@ -7,7 +7,7 @@ import { ZenPane } from "@/components/zentask/zen";
 import { KnobsBar } from "@/components/knobsbar/knobsbar";
 import { Backdrop } from "@/components/backdrop";
 import { Homestage } from "@/components/homestage/homestage";
-import '../../public/faces/faces.css';
+import '$/faces/faces.css';
 
 
 export function MainPage()
