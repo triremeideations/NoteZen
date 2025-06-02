@@ -4,6 +4,8 @@
         #23232344,
         #dcff9a44
     );
+    overflow-y: hidden;
+    border-bottom: 1px solid goldenrod;
 }
 .mood-ring{
     font-family: Suisse Intl-Light;

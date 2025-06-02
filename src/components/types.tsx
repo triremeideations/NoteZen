@@ -46,4 +46,8 @@ export interface paneActiveContextProps{
     isMoodplayerShowing: boolean;
     setIsMoodplayerShowing: 
         React.Dispatch<React.SetStateAction<boolean>>,
+
+    isPlaycontrolShowing: boolean;
+    setIsPlaycontrolShowing: 
+        React.Dispatch<React.SetStateAction<boolean>>,
 }

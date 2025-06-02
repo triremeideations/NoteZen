@@ -5,6 +5,7 @@ import { BF_Playlist } from '../playlists/BF';
 import { CF_Playlist } from '../playlists/CF';
 import { DR_Playlist } from '../playlists/DR';
 import { SP_Playlist } from '../playlists/SP';
+import { PlayControls } from '../playbar/controls';
 
 export function ZenPane()
 {
@@ -21,6 +22,7 @@ export function ZenPane()
 		setIsPlaylistAShowing, setIsPlaylistBShowing,
 		setIsPlaylistCShowing, setIsPlaylistDShowing,
 		setIsMoodplayerShowing,
+		isPlaycontrolShowing, setIsPlaycontrolShowing,
 	} = useCurrentPaneContext();
 
 	function hideAllPlaylists(){
@@ -29,6 +31,16 @@ export function ZenPane()
 		setIsPlaylistCShowing(false);
 		setIsPlaylistDShowing(false);
 		setIsMoodplayerShowing(false);
+		setIsPlaycontrolShowing(false);
+		hidePlayer();
+	}
+	function prepPlayer(){
+		setIsMoodplayerShowing(true);
+		setIsPlaycontrolShowing(true);
+	}
+	function hidePlayer(){
+		setIsMoodplayerShowing(false);
+		setIsPlaycontrolShowing(false);
 	}
 
 	return (
@@ -39,7 +51,7 @@ export function ZenPane()
 					<div className="isMCKnob" id="mcBF"
 						onClick={()=>{
 							hideAllPlaylists(); 
-							setIsMoodplayerShowing(true);
+							prepPlayer();
 							setIsPlaylistAShowing(true);
 						}}
 					>
@@ -50,7 +62,7 @@ export function ZenPane()
 					<div className="isMCKnob" id="mcCF"
 						onClick={()=>{
 							hideAllPlaylists();
-							setIsMoodplayerShowing(true);
+							prepPlayer();
 							setIsPlaylistBShowing(true);
 						}}
 					>
@@ -61,7 +73,7 @@ export function ZenPane()
 					<div className="isMCKnob" id="mcDR"
 						onClick={()=>{
 							hideAllPlaylists();
-							setIsMoodplayerShowing(true);
+							prepPlayer();
 							setIsPlaylistCShowing(true);
 						}}
 					>
@@ -73,7 +85,7 @@ export function ZenPane()
 						onClick={()=>{
 							hideAllPlaylists();
 							setIsPlaylistDShowing(true);
-							setIsMoodplayerShowing(true);
+							prepPlayer();
 						}}
 					>
 						Sleep Prep / Night
@@ -87,6 +99,9 @@ export function ZenPane()
 					<SP_Playlist />
 				</div>
 			</div>
+			{
+				isPlaycontrolShowing ? <PlayControls/>:<div></div>
+			}
 		</div>
 	);
 }
