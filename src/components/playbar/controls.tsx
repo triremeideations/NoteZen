@@ -5,8 +5,8 @@ export const PlayControls =()=>{
         <div className="play-controls">
             <div className="isHUD">
                 <p>0:00</p>
-                <div className="progressBar">
-                    <div className="progressIndicator"></div>
+                <div className="progress-bar">
+                    <div className="progress-indicator"></div>
                 </div>
                 <p>3:12</p>
             </div>

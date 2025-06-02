@@ -1,15 +1,27 @@
 .play-controls {
     position: absolute;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.596);
     width: 100%;
     left: 0;
     height: 25%;
     display: grid;
-    grid-template-rows: 0.4fr 0.6fr;
+    grid-template-rows: 0.2fr 0.8fr;
 }
 .isHUD
 {
-    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 10px;
+    font-size: 75%;
+}
+.progress-bar{
+    width: 80%;
+    height: 3px;
+    border: 1px inset silver;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .isDASH
 {
@@ -20,7 +32,7 @@
 }
 .isCtrl
 {
-    border: 1px outset goldenrod;
+    border: 1px outset silver;
     height: 40px;
     width: 40px;
     cursor: pointer;
@@ -36,9 +48,23 @@
 }
 .isCtrl:hover{
     transform: scale(1.1);
-    background-color: goldenrod;
+    background-color: silver;
     color: black;
 }
 .isCtrl:active{
     transform: scale(0.9);
+}
+@media only screen and (max-height: 540px) {
+    .play-controls
+    {
+        height: 30%;
+    }
+    .isCtrl{
+        position: relative;
+        top: -5px;
+        height: 25px;
+        width: 25px;
+        font-size: small;
+    }
+    
 }
