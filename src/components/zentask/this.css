@@ -34,10 +34,14 @@
     border: 1px solid red;
 } */
 
-/* other isMCKnob styles in global.css */
-.isMCKnob,
-.isMCKnob:hover
+
+.isMCKnob
 {
+    cursor: pointer;
+	transition: transform 0.5s ease;
+	display: flex;
+	align-items: center;
+
     border: 1px solid #dcff9a;
     border-radius: 20px;
     height: 50px;
@@ -63,8 +67,18 @@
     color: #232323;
 }
 .isMCKnob:hover{
+    transform: scale(1.1);
+	transition: all 0.75s ease;
+	box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.3);
     background-color: #dcff9a;
     font-weight: bold;
+    font-size: 85%;
+}
+.isMCKnob:active
+{
+	transform: scale(0.9);
+	transition: all 0.4s ease;
+    font-size: 90%;
 }
 
 .mood-player{
