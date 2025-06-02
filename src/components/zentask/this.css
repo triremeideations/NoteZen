@@ -87,10 +87,11 @@
 
 /* experiment */
 .isMCKnob{
-    font-size: 70%;
+    font-size: 75%;
 }
 .isMCKnob:hover{
-    font-size: 95%;
+    font-size: 90%;
+    letter-spacing: -1.5px;
 }
 /* end experiment */
 
