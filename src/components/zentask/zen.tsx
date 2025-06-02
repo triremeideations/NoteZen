@@ -54,7 +54,7 @@ export function ZenPane()
 							setIsPlaylistBShowing(true);
 						}}
 					>
-						Creative Flow / Journaling
+						Creative Flow
 						<small>~15 minute Exercise</small>
 					</div>
 
@@ -65,7 +65,7 @@ export function ZenPane()
 							setIsPlaylistCShowing(true);
 						}}
 					>
-						Deep Rest & Mental Scan
+						Mental Scan
 						<small>30+ minutes Exercise</small>
 					</div>
 					

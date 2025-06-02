@@ -86,13 +86,12 @@
 }
 
 /* experiment */
-.isMCKnob{
-    font-size: 75%;
-}
-.isMCKnob:hover{
-    font-size: 85%;
-    letter-spacing: -1.5px;
-}
+    .isMCKnob{
+        font-size: 75%;
+    }
+    .isMCKnob:hover{
+        font-size: 90%;
+    }
 /* end experiment */
 
 .mood-player{

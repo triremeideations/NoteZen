@@ -15,6 +15,10 @@ export const BF_Playlist=()=>{
 
     return(
         <div className={`isPlaylist ${!isPlaylistAShowing ? "notActive" : "isActive"}`}>
+            <h6> <small>
+                FOCUS | BREATHING  
+            </small> </h6>
+            <br/>
             <PlayTrack
                 spilltea={[
                     "Driftphase",

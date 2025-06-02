@@ -16,6 +16,11 @@ export const CF_Playlist=()=>{
 
     return(
         <div className={`isPlaylist ${!isPlaylistBShowing ? "notActive" : "isActive"}`}>
+            <h6> <small>
+                 FLOW | JOURNALING 
+            </small> </h6>
+            <br/>
+            
             <PlayTrack spilltea={["Glasswing"]}/>
             <PlayTrack spilltea={["Slowform"]}/>
             <PlayTrack spilltea={["Blownline"]}/>

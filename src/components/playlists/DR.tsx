@@ -15,6 +15,10 @@ export const DR_Playlist=()=>{
 
     return(
         <div className={`isPlaylist ${!isPlaylistCShowing ? "notActive" : "isActive"}`}>
+            <h6> <small>
+                FRAMING | INTROSPECT
+            </small> </h6>
+            <br/>
             <PlayTrack spilltea={["Threadbare"]}/>
             <PlayTrack spilltea={["Loamlight"]}/>
             <PlayTrack spilltea={["Overquiet"]}/>

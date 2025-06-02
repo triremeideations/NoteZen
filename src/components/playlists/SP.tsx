@@ -15,7 +15,10 @@ export const SP_Playlist=()=>{
 
     return(
         <div className={`isPlaylist ${!isPlaylistDShowing ? "notActive" : "isActive"}`}>
-            <PlayTrack spilltea={["Nesting"]}/>
+            <h6> <small>
+                FURLING | SLUMBER
+            </small> </h6>
+            <br/><PlayTrack spilltea={["Nesting"]}/>
             <PlayTrack spilltea={["Sleepwake"]}/>
             <PlayTrack spilltea={["Second Silence"]}/>
             <PlayTrack spilltea={["Pale Bloom"]}/>
