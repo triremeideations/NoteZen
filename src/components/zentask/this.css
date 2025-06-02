@@ -85,6 +85,15 @@
     word-spacing: -1px;
 }
 
+/* experiment */
+.isMCKnob{
+    font-size: 70%;
+}
+.isMCKnob:hover{
+    font-size: 95%;
+}
+/* end experiment */
+
 .mood-player{
     position: relative;
     overflow-y: scroll;
