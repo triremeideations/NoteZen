@@ -68,18 +68,18 @@
 }
 .isMCKnob:hover{
     transform: scale(1.1);
-	transition: all 0.75s ease;
+	transition: 
+        transform 0.75s ease, font-size 0.5s ease;
 	box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.3);
     background-color: #dcff9a;
     font-weight: bold;
-    font-size: 75%;
-    word-spacing: -1px;
+    font-size: 85%;
 }
 .isMCKnob:active
 {
 	transform: scale(0.9);
 	transition: all 0.4s ease;
-    font-size: 80%;
+    font-size: 75%;
     word-spacing: -1px;
 }
 
