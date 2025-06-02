@@ -18,8 +18,7 @@ export function KnobsBar(){
 
         setIsPlaylistAShowing,setIsPlaylistBShowing,
         setIsPlaylistCShowing, setIsPlaylistDShowing,
-        isMoodplayerShowing, setIsMoodplayerShowing,
-        setIsPlaycontrolShowing
+        setIsMoodplayerShowing, setIsPlaycontrolShowing
     } = useCurrentPaneContext();
 
     function hideAll():void
