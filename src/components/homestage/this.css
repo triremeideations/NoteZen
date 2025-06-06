@@ -82,10 +82,14 @@
 
 
 /****icons****/
+.zenKnob {
+    background-image: url('../../../public/images/home/massage.svg');
+}
 /* 
 .zenKnob {
     background-image: url('../../../public/images/home/lotus.gif');
 }
+
 .quickKnob {
     background-image: url('../../../public/images/home/notebook.gif');
 }
