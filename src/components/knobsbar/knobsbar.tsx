@@ -83,7 +83,7 @@ export function KnobsBar(){
         <div 
         className ={ `isKnobsBar ${!isKnobsbarShowing ? "notActive" : "isActive"}` }>
             <button className="isKnob underbar" onClick={showHome}>
-                <small>Back HOME</small>
+                <small> Back</small>
             </button>
             <button className="isKnob zenKnob underbar" onClick={showZen}></button>
             <button className="isKnob quickKnob underbar" onClick={showQuicknote}></button>

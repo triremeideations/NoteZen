@@ -63,43 +63,85 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.85;
+    /* opacity: 0.85; */
 }
+.isKnob.homebar{
+    width: 60px;
+    height: 60px;
+    border-color: transparent;
+    fill: white;
+}
+.isKnob.homebar svg{
+    width: 45px;
+    height: 45px;
+}
+
+/******/
+.zenKnob.homebar svg{
+    transition: transform 0.5s linear;
+}
+.zenKnob.homebar{
+    transform-style: preserve-3d;
+    transition: 
+        transform 0.75s ease-in-out,
+        border-color 1.5s ease,
+        border-radius 1s ease,
+        fill 1.5s linear
+    ;
+}
+.zenKnob.homebar:hover{
+    fill: #dcff4a;
+    border-color: #dcff4a;
+    transform: rotateY(180deg);
+    background-color: #00000050;
+    background: linear-gradient(
+        45deg,
+        #23232344,
+        #dcff9a44
+    );
+    border-radius: 50%;
+}
+.zenKnob.homebar:hover svg{
+    transition: transform 1s ease-in;
+    transform: rotateZ(-135deg);
+}
+
 
 .midbody .info
 {
     font-family: "Suisse Intl", "Lucida Sans", Tahoma, sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
+    font-size: 0.85rem;
     letter-spacing: -0.04em;
-    line-height: 0.95;
+    /* line-height: 0.95; */
 
     text-wrap: pretty;
+    /* text-align: right; */
+    /* word-spacing: 1px; */
+    /* color: wheat; */
+    text-shadow: 1px 1px 1px black;
+}
+.info .catch{
     text-align: right;
-    word-spacing: 3px;
-    color: wheat;
 }
 
 
 /****icons****/
-.zenKnob {
-    background-image: url('../../../public/images/home/massage.svg');
-}
-/* 
-.zenKnob {
+.zenKnob.underbar {
     background-image: url('../../../public/images/home/lotus.gif');
 }
-
-.quickKnob {
+    
+.quickKnob.underbar {
     background-image: url('../../../public/images/home/notebook.gif');
 }
-.listKnob {
+.listKnob.underbar {
     background-image: url('../../../public/images/home/checklist.gif');
 }
-.booksKnob {
+.booksKnob.underbar {
     background-color: white;
 
     background-image: url('../../../public/images/home/book.gif');
     background-size: 85%;
     background-position: center;
-} */
+}
