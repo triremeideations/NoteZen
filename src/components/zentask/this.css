@@ -5,7 +5,8 @@
         #dcff9a44
     );
     overflow-y: hidden;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #dcff9ab4;
+    background-color: rgba(0, 0, 0, 0.99);
 }
 .mood-ring{
     font-family: Suisse Intl-Light;
@@ -16,25 +17,19 @@
     letter-spacing: -2px;
     line-height: 0.9;
     height: 20%;
-    /* border: 1px solid red; */
 }
 
 
 .mood-choice{
-    width: 95%;
+    width: 97%;
     margin: auto;
     height: 55%;
     
     display: grid;
     grid-template-columns: 0.45fr 0.55fr;
-    gap: 15px;
-    margin-top: 10px;
-    /* border: 1px solid white; */
-    /* border-bottom: 1px solid white; */
+    gap: 10px;
+    margin-top: 20px;
 }
-/* .mood-cap{
-    border: 1px solid red;
-} */
 
 
 .isMCKnob
@@ -46,7 +41,7 @@
 
     border: 1px solid #dcff9a;
     border-radius: 20px;
-    height: 50px;
+    height: 45px;
     max-width: 210px;
     box-sizing: border-box;
     padding-left: 10px;
@@ -101,18 +96,23 @@
     overflow-y: scroll;
     overflow-x: hidden;
     width: 100%;
-    /* border: 1px solid royalblue; */
     background-image: url('./../../../public/images/hinduist-yoga-position.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/******************/
 .mood-player::-webkit-scrollbar
 {
     background-color: rebeccapurple;
     width: 5px;
     border-radius: 5px;
     cursor: pointer;
+
+    /* have disabled scrollbar permanently since i've included scroll buttons
+    associated code and styling kept for reference purposes */
+    display: none;
 }
 .mood-player::-webkit-scrollbar-thumb
 {
@@ -124,14 +124,64 @@
 {
     cursor: grabbing;
 }
+/******************/
+.mpd{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.mood-playerKnobs{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #dcff9a;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+    
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+.mood-playerKnobs button{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px outset #232323;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mood-playerKnobs button svg{
+    width: 50%;
+    height: 50%;
+    fill: #dcff9ab4;
+}
+.mood-playerKnobs button:active{
+    border: 1px inset #232323;
+}
+.mood-playerKnobs button:active svg{
+    fill: orange;
+}
 
+/**************************/
 .isPlaylist{
     background-color: #23232369;
+    background: linear-gradient(
+        5deg,
+        #23232344,
+        #dcff9a44,
+        #23232344
+    );
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid silver;
+    border: 1px solid #dcff9a;
     position: absolute;
-    top: 40%;
+    /* top: 40%; */
     
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -164,3 +214,12 @@
         top: 35%;
     }
 }
+
+/* .mood-choice{
+    border: 1px solid orange;
+}
+.mood-cap{
+    border: 1px solid red;
+}.mood-player{
+    border: 1px solid royalblue;
+} */

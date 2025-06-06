@@ -12,17 +12,37 @@
     border-bottom: 1px solid silver;
     transition: all 0.5s ease;
     border-radius: 5px;
-    /* border: 1px solid royalblue; */
+    font-size: 90%;
 }
+@media only screen 
+and (max-width: 540px){
+    .isTrackOption{
+        font-size: 75%;
+    }
+    .mood-player::-webkit-scrollbar
+    {
+        display: none;
+    }
+}
+@media only screen 
+and (max-height: 540px){
+    .isTrackOption{
+        font-size: 75%;
+    }
+    .mood-player::-webkit-scrollbar
+    {
+        display: none;
+    }
+}
+
 .isTrackOption:hover{
-    background-color: #000;
-    color: gold;
+    background-color: #000000ad;
+    color: #dcff9a;
     border-color: #dcff9a;
 }
 .isTrackImg
 {
-    border: 1px solid white;
-    border-color: inherit;
+    border: 1px solid #dcff9a;
     width: 50px;
     height: 50px;
 }
@@ -49,7 +69,6 @@
 {
     max-height: 90%;
     line-height: 0.65;
-    /* border: 1px solid gold; */
 }
 .isTrackDesc small{
     font-size: 65%;

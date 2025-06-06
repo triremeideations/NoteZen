@@ -1,11 +1,12 @@
 import './this.css';
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { paneActiveContext } from "@/contexts/PaneContext";
 import { BF_Playlist } from '../playlists/BF';
 import { CF_Playlist } from '../playlists/CF';
 import { DR_Playlist } from '../playlists/DR';
 import { SP_Playlist } from '../playlists/SP';
 import { PlayControls } from '../playbar/controls';
+import { PlaylistScroller } from '../playlists/SCR';
 
 export function ZenPane()
 {
@@ -42,6 +43,19 @@ export function ZenPane()
 		setIsMoodplayerShowing(false);
 		setIsPlaycontrolShowing(false);
 	}
+
+	const moodplayerRef = useRef<HTMLDivElement>(null);
+
+	function playlistUp(){
+        if (moodplayerRef.current){
+            moodplayerRef.current.scrollTop -= 100;
+        }
+    }
+    function playlistDown(){
+        if (moodplayerRef.current){
+            moodplayerRef.current.scrollTop += 100;
+        }
+    }
 
 	return (
 		<div className={`isPane isZentask ${!isZenShowing ? "notActive" : "isActive"}`}>
@@ -92,7 +106,16 @@ export function ZenPane()
 						<small>Duration as Needed</small>
 					</div>
 				</div>
-				<div className={`mood-player ${!isMoodplayerShowing ? "hideBar" : "showBar"}`}>
+				<div 
+					className={`mood-player ${!isMoodplayerShowing ? "hideBar" : "showBar"}`}
+					ref={ moodplayerRef }
+				>
+					<div className={`mpd ${!isMoodplayerShowing ? "notActive" : "isActive"}`}>
+						<PlaylistScroller 
+							playlistUp={playlistUp}
+							playlistDown={playlistDown}
+						/>
+					</div>
 					<BF_Playlist />
 					<CF_Playlist />
 					<DR_Playlist />

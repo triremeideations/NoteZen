@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Audio Player</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #fdfdfd;
+    }
+    .audio-player {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+    }
+    .controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    input[type="range"] {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="audio-player">
+    <audio id="audio" src="/assets/audio/gamesounds/LWL-WORLD-A.wav"></audio>
+
+    <div class="controls">
+      <button onclick="rewind()">⏪ 10s</button>
+      <button onclick="togglePlay()" id="playBtn">▶️</button>
+      <button onclick="forward()">⏩ 10s</button>
+    </div>
+
+    <input type="range" id="progress" value="0" step="1">
+
+    <label>
+      Volume:
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+    </label>
+
+    <label>
+      Speed:
+      <select id="speed">
+        <option value="0.5">0.5×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.5">1.5×</option>
+        <option value="2">2×</option>
+      </select>
+    </label>
+  </div>
+
+  <script>
+    const audio = document.getElementById('audio');
+    const progress = document.getElementById('progress');
+    const volume = document.getElementById('volume');
+    const speed = document.getElementById('speed');
+    const playBtn = document.getElementById('playBtn');
+
+    // Toggle play/pause
+    function togglePlay() {
+      if (audio.paused) {
+        audio.play();
+        playBtn.textContent = '⏸️';
+      } else {
+        audio.pause();
+        playBtn.textContent = '▶️';
+      }
+    }
+
+    // Rewind
+    function rewind() {
+      audio.currentTime -= 10;
+    }
+
+    // Forward
+    function forward() {
+      audio.currentTime += 10;
+    }
+
+    // Update progress bar
+    audio.addEventListener('timeupdate', () => {
+      progress.value = audio.currentTime;
+    });
+
+    // Set progress max on load
+    audio.addEventListener('loadedmetadata', () => {
+      progress.max = audio.duration;
+    });
+
+    // Seek
+    progress.addEventListener('input', () => {
+      audio.currentTime = progress.value;
+    });
+
+    // Volume control
+    volume.addEventListener('input', () => {
+      audio.volume = volume.value;
+    });
+
+    // Playback speed control
+    speed.addEventListener('change', () => {
+      audio.playbackRate = parseFloat(speed.value);
+    });
+  </script>
+
+</body>
+</html>
