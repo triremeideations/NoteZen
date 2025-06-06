@@ -16,7 +16,8 @@ export function Homestage()
     const {
         isHomeShowing, setIsHomeShowing,
         setIsZenShowing, setIsChecklistShowing, setIsNotebookShowing,
-        setIsQuicknoteShowing, setIsKnobsbarShowing
+        setIsQuicknoteShowing, setIsKnobsbarShowing,
+        isKnobAnimated
     } = useCurrentPaneContext();
 
 // NOTE to SELF
@@ -74,7 +75,14 @@ export function Homestage()
             
             <div className="options">
                 <div className="optknobs">
-                    <div className="isKnob zenKnob homebar" onClick={showZen}>
+                    <div 
+                        className=
+                        {`
+                            isKnob zenKnob 
+                            ${isKnobAnimated ? "zenKnob__anim" : "__static"}
+                            homebar
+                        `}
+                        onClick={showZen}>
                        <svg 
                        xmlns="http://www.w3.org/2000/svg"
                        id="Layer_1"
@@ -85,7 +93,14 @@ export function Homestage()
                        </svg>
                     </div>
                     
-                    <div className="isKnob quickKnob homebar" onClick={showQuicknote}>
+                    <div
+                        className=
+                        {`
+                            isKnob quickKnob 
+                            ${isKnobAnimated ? "quickKnob__anim" : "__static"}
+                            homebar
+                        `}
+                        onClick={showQuicknote}>
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         id="Layer_2"
@@ -96,7 +111,14 @@ export function Homestage()
                         </svg>
                     </div>
                     
-                    <div className="isKnob listKnob homebar" onClick={showChecklist}>
+                    <div
+                        className=
+                        {`
+                            isKnob listKnob 
+                            ${isKnobAnimated ? "listKnob__anim" : "__static"}
+                            homebar
+                        `}
+                        onClick={showChecklist}>
                         <svg 
                         xmlns="http://www.w3.org/2000/svg"
                         id="Layer_3"
@@ -106,7 +128,14 @@ export function Homestage()
                         </svg>
                     </div>
 
-                    <div className="isKnob booksKnob homebar" onClick={showNotebook}>
+                    <div
+                        className=
+                        {`
+                            isKnob booksKnob 
+                            ${isKnobAnimated ? "booksKnob__anim" : "__static"}
+                            homebar
+                        `}
+                        onClick={showNotebook}>
                     <svg 
                         xmlns="http://www.w3.org/2000/svg"
                         id="Layer_4"

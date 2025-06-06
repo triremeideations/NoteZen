@@ -77,10 +77,13 @@
 }
 
 /******/
-.zenKnob.homebar svg{
+.__static{
+    opacity: 1;
+}
+.zenKnob__anim.homebar svg{
     transition: transform 0.5s linear;
 }
-.zenKnob.homebar{
+.zenKnob__anim.homebar{
     transform-style: preserve-3d;
     transition: 
         transform 0.75s ease-in-out,
@@ -89,7 +92,7 @@
         fill 1.5s linear
     ;
 }
-.zenKnob.homebar:hover{
+.zenKnob__anim.homebar:hover{
     fill: #dcff4a;
     border-color: #dcff4a;
     transform: rotateY(180deg);
@@ -101,11 +104,11 @@
     );
     border-radius: 50%;
 }
-.zenKnob.homebar:hover svg{
+.zenKnob__anim.homebar:hover svg{
     transition: transform 1s ease-in;
     transform: rotateZ(-135deg);
 }
-
+/******/
 
 .midbody .info
 {
@@ -128,17 +131,17 @@
 
 
 /****icons****/
-.zenKnob.underbar {
+.zenKnob__anim.underbar {
     background-image: url('../../../public/images/home/lotus.gif');
 }
     
-.quickKnob.underbar {
+.quickKnob__anim.underbar {
     background-image: url('../../../public/images/home/notebook.gif');
 }
-.listKnob.underbar {
+.listKnob__anim.underbar {
     background-image: url('../../../public/images/home/checklist.gif');
 }
-.booksKnob.underbar {
+.booksKnob__anim.underbar {
     background-color: white;
 
     background-image: url('../../../public/images/home/book.gif');

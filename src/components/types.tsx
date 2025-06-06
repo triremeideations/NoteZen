@@ -50,4 +50,8 @@ export interface paneActiveContextProps{
     isPlaycontrolShowing: boolean;
     setIsPlaycontrolShowing: 
         React.Dispatch<React.SetStateAction<boolean>>,
+    
+    isKnobAnimated: boolean;
+    setIsKnobAnimated: 
+        React.Dispatch<React.SetStateAction<boolean>>,
 }

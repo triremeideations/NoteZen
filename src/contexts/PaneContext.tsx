@@ -30,6 +30,8 @@ export const PaneActiveProvider=(
     const [isMoodplayerShowing, setIsMoodplayerShowing] = useState<boolean>(false);
     const [isPlaycontrolShowing, setIsPlaycontrolShowing] = useState<boolean>(false);
 
+    const [isKnobAnimated, setIsKnobAnimated] = useState<boolean>(true);
+
     return(
         <paneActiveContext.Provider
             value={{
@@ -47,6 +49,8 @@ export const PaneActiveProvider=(
 
                 isMoodplayerShowing, setIsMoodplayerShowing,
                 isPlaycontrolShowing, setIsPlaycontrolShowing,
+
+                isKnobAnimated, setIsKnobAnimated,
             }}
         >
             {children}
