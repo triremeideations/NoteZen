@@ -2,10 +2,10 @@
     background: linear-gradient(
         155deg,
         #23232344,
-        #dcff9a44
+        var(--zenMainB)
     );
     overflow-y: hidden;
-    border-bottom: 1px solid #dcff9ab4;
+    border-bottom: 1px solid var(--zenMainC);
     background-color: rgba(0, 0, 0, 0.99);
 }
 .mood-ring{
@@ -39,7 +39,7 @@
 	display: flex;
 	align-items: center;
 
-    border: 1px solid #dcff9a;
+    border: 1px solid var(--zenMainA);
     border-radius: 20px;
     height: 45px;
     max-width: 210px;
@@ -57,7 +57,7 @@
     bottom: 7px;
     font-size: 65%;
     letter-spacing: -1px;
-    color: #dcff9a;
+    color: var(--zenMainA);
 }
 .isMCKnob:hover small,
 .isMCKnob:hover{
@@ -68,7 +68,7 @@
 	transition: 
         transform 0.75s ease, font-size 0.5s ease;
 	box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.3);
-    background-color: #dcff9a;
+    background-color: var(--zenMainA);
     font-weight: bold;
     font-size: 75%;
     /* word-spacing: -1px; */
@@ -125,6 +125,7 @@
     cursor: grabbing;
 }
 /******************/
+
 .mpd{
     position: sticky;
     top: 0;
@@ -133,7 +134,7 @@
 .mood-playerKnobs{
     width: 100%;
     height: 50px;
-    border-bottom: 1px solid #dcff9a;
+    /* border-bottom: 1px solid var(--zenMainA); */
     border-bottom-right-radius: 15px;
     display: flex;
     gap: 10px;
@@ -159,7 +160,7 @@
 .mood-playerKnobs button svg{
     width: 50%;
     height: 50%;
-    fill: #dcff9ab4;
+    fill: var(--zenMainC);
 }
 .mood-playerKnobs button:active{
     border: 1px inset #232323;
@@ -174,14 +175,15 @@
     background: linear-gradient(
         5deg,
         #23232344,
-        #dcff9a44,
+        var(--zenMainB),
         #23232344
     );
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid #dcff9a;
+    border: 1px solid var(--zenMainA);
+    border-bottom: 1px solid transparent;
     position: absolute;
-    /* top: 40%; */
+    /* top: 100px; */
     
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -189,7 +191,6 @@
     padding: 10px;
     width: 100%;
     height: auto;
-    /* border: 1px solid yellow; */
 }
 
 /***************************************/
@@ -211,7 +212,7 @@
         display: none;
     }
     .isPlaylist{
-        top: 35%;
+        top: 50px;
     }
 }
 

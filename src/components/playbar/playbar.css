@@ -1,11 +1,14 @@
 .play-controls {
     position: absolute;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 2px;
     background-color: rgba(0, 0, 0, 0.596);
     width: 100%;
     left: 0;
     height: 25%;
     display: grid;
-    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-rows: 0.3fr 0.7fr;
 }
 .isHUD
 {
@@ -19,22 +22,28 @@
 .progress-bar{
     width: 80%;
     height: 3px;
-    border: 1px inset silver;
+    border: 1px inset var(--zenMainA);
     border-radius: 5px;
     cursor: pointer;
 }
+.progress-indicator{
+    height: 100%;
+    width: 60%;
+    background-color: var(--zenMainA);
+}
 .isDASH
 {
-    /* border: 1px solid gold; */
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5px;
+    height: 90%;
 }
 .isCtrl
 {
-    border: 1px outset silver;
-    height: 40px;
-    width: 40px;
+    border: 1px outset black;
+    height: 32px;
+    width: 32px;
     cursor: pointer;
     padding: 0;
     border-radius: 100%;
@@ -42,13 +51,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: small;
 }
 .isCtrl.pause{
     padding: 5px;
 }
 .isCtrl:hover{
     transform: scale(1.1);
-    background-color: silver;
+    background-color: var(--zenMainA);
     color: black;
 }
 .isCtrl:active{

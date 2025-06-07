@@ -14,6 +14,9 @@
     scroll-behavior: smooth;
 
 	--fleur_side: 450px;
+	--zenMainA: #dcff9a;
+	--zenMainB: #dcff9a44;
+	--zenMainC: #dcff9ab4;
 }
 body {
 	font-family: nunito, Helvetica, sans-serif;

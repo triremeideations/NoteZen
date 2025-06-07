@@ -4,9 +4,9 @@
     margin-bottom: 10px;
     display: grid;
     grid-template-columns: 0.1fr 0.9fr;
-    gap: 10px;
+    gap: 12px;
     box-sizing: border-box;
-    padding: 3px;
+    padding: 2px;
     overflow: hidden;
     cursor: pointer;
     border-bottom: 1px solid silver;
@@ -17,7 +17,7 @@
 @media only screen 
 and (max-width: 540px){
     .isTrackOption{
-        font-size: 75%;
+        font-size: 70%;
     }
     .mood-player::-webkit-scrollbar
     {
@@ -37,12 +37,12 @@ and (max-height: 540px){
 
 .isTrackOption:hover{
     background-color: #000000ad;
-    color: #dcff9a;
-    border-color: #dcff9a;
+    color: var(--zenMainA);
+    border-color: var(--zenMainA);
 }
 .isTrackImg
 {
-    border: 1px solid #dcff9a;
+    border: 1px solid var(--zenMainA);
     width: 50px;
     height: 50px;
 }
@@ -61,7 +61,7 @@ and (max-height: 540px){
     align-items: center;
 }
 .isTrackName:hover{
-    color: #dcff9a;
+    color: var(--zenMainA);
 }
 
 .isTrackName,
@@ -71,7 +71,7 @@ and (max-height: 540px){
     line-height: 0.65;
 }
 .isTrackDesc small{
-    font-size: 65%;
+    font-size: 63%;
 }
 .isTrackDesc{
     overflow-y: scroll;
